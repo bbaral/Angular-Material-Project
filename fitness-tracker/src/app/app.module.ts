@@ -19,6 +19,9 @@ import { WelcomeComponent } from './welcome/welcome.component'
 //Routing file
 import {AppRoutingModule} from './app-routing.module'
 
+//Angular Material Things
+import {FlexLayoutModule} from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,8 @@ import {AppRoutingModule} from './app-routing.module'
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
     
   ],
   providers: [],
