@@ -1,0 +1,12 @@
+/**
+ * All the material modules are in this file
+ */
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  imports: [
+  ]
+})
+export class MaterialModule {
+  
+  }
