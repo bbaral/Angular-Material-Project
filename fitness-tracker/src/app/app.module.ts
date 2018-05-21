@@ -21,7 +21,7 @@ import {AppRoutingModule} from './app-routing.module'
 
 //Angular Material Things
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

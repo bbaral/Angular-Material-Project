@@ -13,6 +13,8 @@ import {
   MatGridListModule,
   MatIconModule,
   MatInputModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
   MatFormFieldModule,
   MatListModule,
   MatMenuModule,
@@ -27,7 +29,7 @@ import {
   MatSnackBarModule,
   MatTabsModule,
   MatToolbarModule,
-  MatTooltipModule
+  MatTooltipModule,
 } from '@angular/material';
 
 @NgModule({
@@ -43,6 +45,8 @@ import {
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatListModule,
     MatMenuModule,
     MatProgressBarModule,
@@ -68,6 +72,8 @@ import {
     MatGridListModule,
     MatIconModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatListModule,
     MatMenuModule,
     MatProgressBarModule,
