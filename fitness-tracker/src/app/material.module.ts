@@ -1,94 +1,41 @@
 /**
  * All the material modules are in this file
  */
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import {
-  MatAutocompleteModule,
   MatButtonModule,
-  MatButtonToggleModule,
-  MatCardModule,
-  MatChipsModule,
-  MatCheckboxModule,
-  MatDialogModule,
-  MatGridListModule,
   MatIconModule,
+  MatFormFieldModule,
   MatInputModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatFormFieldModule,
-  MatListModule,
-  MatMenuModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatRippleModule,
-  MatSelectModule,
   MatSidenavModule,
-  MatSliderModule,
-  MatSlideToggleModule,
-  MatSnackBarModule,
-  MatTabsModule,
-  MatToolbarModule,
-  MatTooltipModule,
-} from '@angular/material';
+  MatCheckboxModule,
+  MatToolbarModule
+} from "@angular/material";
 
 @NgModule({
   imports: [
-    MatAutocompleteModule,
     MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatChipsModule,
-    MatCheckboxModule,
-    MatDialogModule,
-    MatGridListModule,
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatListModule,
-    MatMenuModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
     MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule],
-
-  exports: [MatAutocompleteModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatChipsModule,
     MatCheckboxModule,
-    MatDialogModule,
-    MatGridListModule,
+    MatToolbarModule
+  ],
+
+  exports: [
+    MatButtonModule,
     MatIconModule,
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatListModule,
-    MatMenuModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
     MatSidenavModule,
-    MatSliderModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule]
+    MatCheckboxModule,
+    MatToolbarModule
+  ]
 })
-export class MaterialModule {
-
-}
+export class MaterialModule {}
