@@ -5,9 +5,7 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //import {  } from '@angular/material';
 
-/**
- * list of all import class here
- */
+// list of all import class here
 import { AppComponent } from './app.component';
 import {MaterialModule} from './material.module';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -22,9 +20,10 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import {StopTrainingComponent} from './training/current-training/stop-training.component';
 //Routing file
 import {AppRoutingModule} from './app-routing.module';
-
-//Angular Material Things
-
+//List of all services being used throughout the application
+import { AuthService } from './auth/auth.service';
+import { TrainingService } from './training/training.service';
+//Angular Material Components
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +49,7 @@ import {AppRoutingModule} from './app-routing.module';
     ReactiveFormsModule
     
   ],
-  providers: [],
+  providers: [AuthService, TrainingService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })
