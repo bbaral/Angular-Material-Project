@@ -8,21 +8,20 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['./training.component.css']
 })
 export class TrainingComponent implements OnInit {
-
-  ongoingTraing = false;
+  ongoingTraining = false;
   exerciseSubscription: Subscription;
+
   constructor(private trainingService: TrainingService) { }
 
   ngOnInit() {
     this.exerciseSubscription = this.trainingService.exerciseChanged.subscribe(
       exercise => {
-        if(exercise) {
-          this.ongoingTraing = true;
+        if (exercise) {
+          this.ongoingTraining = true;
         } else {
-          this.ongoingTraing = false;
+          this.ongoingTraining = false;
         }
       }
     );
   }
-
 }
