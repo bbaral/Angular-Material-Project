@@ -4,9 +4,9 @@ import { Exercise } from './exercise.module';
 export class TrainingService {
   exerciseChanged = new Subject<Exercise>();
   private availableExercises: Exercise[] = [
-    { id: 'crunches', name: 'Crunches', duration: 30, calories: 8 },
-    { id: 'touch-toes', name: 'Touch Toes', duration: 35, calories: 15 },
-    { id: 'side-lunges', name: 'Side Lunges', duration: 55, calories: 18 },
+    { id: 'crunches', name: 'Crunches', duration: 35, calories: 8 },
+    { id: 'touch-toes', name: 'Touch Toes', duration: 45, calories: 15 },
+    { id: 'side-lunges', name: 'Side Lunges', duration: 20, calories: 18 },
     { id: 'burpees', name: 'Burpees', duration: 25, calories: 8 }
   ];
   private runningExercise: Exercise;
@@ -37,7 +37,7 @@ export class TrainingService {
     this.exercises.push({
       ...this.runningExercise,
       duration: this.runningExercise.duration * (progress / 100),
-      calories: this.runningExercise.duration * (progress / 100),
+      calories: this.runningExercise.calories * (progress / 100),
       date: new Date(),
       state: 'cancelled'
     });
