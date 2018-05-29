@@ -24,4 +24,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Database setup
 
-I used ```Google firebase``` for this app. If you indent to pull the code. Please make sure to create your own firebase account and use it. For more Info  [Angular Firebase](https://github.com/angular/angularfire2)
+I used ```Google firebase``` for this app. If you indent to pull the code. Please make sure to create your own firebase account and use it. For more Info go to  [Angular Firebase](https://github.com/angular/angularfire2) && [Google Firebase](https://firebase.google.com/)
