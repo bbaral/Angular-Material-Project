@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
-import { AuthData } from './auth-data.module';
-import { User } from './user.module';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs/Subject';
+
+import { User } from './user.model';
+import { AuthData } from './auth-data.model';
 
 @Injectable()
 export class AuthService {
@@ -24,7 +25,7 @@ export class AuthService {
       email: authData.email,
       userId: Math.round(Math.random() * 10000).toString()
     };
-    this.authSuccessfully();  
+    this.authSuccessfully();
   }
 
   logout() {
@@ -36,7 +37,7 @@ export class AuthService {
   getUser() {
     return { ...this.user };
   }
-  
+
   isAuth() {
     return this.user != null;
   }

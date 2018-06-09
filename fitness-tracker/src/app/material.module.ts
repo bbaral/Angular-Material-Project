@@ -1,7 +1,4 @@
-/**
- * All the material modules are in this file
- */
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
   MatIconModule,
@@ -9,11 +6,10 @@ import {
   MatInputModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatSidenavModule,
   MatCheckboxModule,
+  MatSidenavModule,
   MatToolbarModule,
   MatListModule,
-  MatMenuModule,
   MatTabsModule,
   MatCardModule,
   MatSelectModule,
@@ -22,21 +18,20 @@ import {
   MatTableModule,
   MatSortModule,
   MatPaginatorModule
-} from "@angular/material";
+} from '@angular/material';
 
 @NgModule({
   imports: [
     MatButtonModule,
     MatIconModule,
-    MatInputModule,
     MatFormFieldModule,
+    MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSidenavModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatMenuModule,
     MatTabsModule,
     MatCardModule,
     MatSelectModule,
@@ -46,18 +41,17 @@ import {
     MatSortModule,
     MatPaginatorModule
   ],
-
   exports: [
     MatButtonModule,
     MatIconModule,
+    MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSidenavModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MatToolbarModule,
     MatListModule,
-    MatMenuModule,
     MatTabsModule,
     MatCardModule,
     MatSelectModule,

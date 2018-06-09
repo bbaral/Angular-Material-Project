@@ -1,6 +1,7 @@
-import { AuthService } from './../auth.service';
 import { Component, OnInit } from '@angular/core';
-import { NgForm, FormControl } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -8,9 +9,9 @@ import { NgForm, FormControl } from '@angular/forms';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
   maxDate;
-  constructor(private authService : AuthService ) { }
+
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
     this.maxDate = new Date();
