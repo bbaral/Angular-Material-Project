@@ -1,0 +1,148 @@
+<div id="main-container">
+  <div id="top">
+
+    <div class="topElement">
+      <div class="fieldsetwrapper">
+      <fieldset>
+        <legend><strong>Client Information:</strong></legend>
+    <mat-grid-list cols="3" rowHeight="17px">
+      <mat-grid-tile>
+        <div class="left-side">Account Number:</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">12345678910123</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="left-side">Division:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">Platinium</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="left-side">Customer Name:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">John Doe</div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+
+        <div class="left-side">Customer Address:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">123 N Example Ave Columbus OH 43212</div>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+      </fieldset>
+      </div>
+    </div>
+
+    <div class="topElement">
+      <div class="fieldsetwrapper">
+        <fieldset>
+          <legend><strong>Associate Information:</strong></legend>
+    <mat-grid-list cols="3" rowHeight="17px">
+      <mat-grid-tile>
+        <div class="left-side">Location Number:</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">Easton</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="left-side">Department:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">Information Technology</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="left-side">Name:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">John Doe</div>
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+        <div class="left-side">RACF ID:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">LD000910</div>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="left-side">Supervisor Name:</div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="2">
+        <div class="right-side">Bill Gates</div>
+      </mat-grid-tile>
+
+    </mat-grid-list>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <div class="transactionInformation">
+    <div class="transactionInformationFieldWrapper">
+      <fieldset>
+        <legend><strong>Trasaction Information:</strong></legend>
+        <mat-grid-list cols="3" rowHeight="17px">
+          <mat-grid-tile>
+            <div class="left-side">Trasaction Amount:</div>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="2">
+            <div class="right-side"></div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <div class="left-side">Dispute Amount:</div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2">
+            <div class="right-side">
+              <input type="text">
+            </div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <div class="left-side">Transaction Date:</div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2">
+            <div class="right-side">John Doe</div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <div class="left-side">Transaction Description:</div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2">
+            <div class="right-side">Client has requested for his recent trasaction</div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <div class="left-side">What is the customer disputing today?</div>
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="2">
+            <div class="right-side">
+              <mat-select placeholder="Favorite food">
+                <mat-option *ngFor="let dispute of Disputes" [value]="dispute.value">
+                  {{ dispute.viewValue }}
+                </mat-option>
+              </mat-select>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="button-holder" fxLayout="column">
+    <button mat-raised-button color="primary">OK There</button>
+    <button mat-raised-button color="primary">Cancel</button>
+    <button mat-raised-button color="primary">Help</button>
+  </div>
+
+</div>
