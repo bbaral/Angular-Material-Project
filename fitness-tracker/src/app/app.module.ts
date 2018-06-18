@@ -23,7 +23,8 @@ import { AuthService } from './auth/auth.service';
 import { TrainingService } from './training/training.service';
 import { environment } from '../environments/environment';
 import {AngularFireAuthModule} from 'angularfire2/auth';
-import { BikramgridPracticeComponent } from './bikramgrid-practice/bikramgrid-practice.component';
+import {UiService} from './shared/ui.service';
+// import { BikramgridPracticeComponent } from './bikramgrid-practice/bikramgrid-practice.component';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { BikramgridPracticeComponent } from './bikramgrid-practice/bikramgrid-pr
     HeaderComponent,
     SidenavListComponent,
     StopTrainingComponent,
-    BikramgridPracticeComponent
+    // BikramgridPracticeComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +54,7 @@ import { BikramgridPracticeComponent } from './bikramgrid-practice/bikramgrid-pr
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [AuthService, TrainingService],
+  providers: [AuthService, TrainingService, UiService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })

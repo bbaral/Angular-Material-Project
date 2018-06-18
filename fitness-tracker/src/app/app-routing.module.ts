@@ -6,13 +6,11 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { TrainingComponent } from './training/training.component';
 import { AuthGuard } from './auth/auth.guard';
-import {BikramgridPracticeComponent} from './bikramgrid-practice/bikramgrid-practice.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'bikram', component: BikramgridPracticeComponent },
   { path: 'training', component: TrainingComponent, canActivate: [AuthGuard] }
 ];
 
